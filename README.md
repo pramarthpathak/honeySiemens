@@ -9,4 +9,27 @@ low interaction honeypot that simulate a siemens PLC
 
 # How to install?
 1. Install [Honeyd](https://github.com/DataSoft/Honeyd) and all its dependencies.
-2. 
+
+`/usr/share/honeyd/nmap-os-db`
+
+2. Install farpd
+
+`sudo apt-get install farpd`
+
+3. Clone this repository 
+4. Fix the script paths  in [honeyd.conf](./honeyd.conf) so they match the absolute path in your file system
+5. Replace IP in [honeyd.conf](./honeyd.conf) with the address you've chosen: the IP address
+has to be on the same network as the host interface where honeyd will listen.
+6. Run: 
+
+`sudo honeyd -d -p nmap-os-db -i INTERFACE -l Honeyd.log -f Honeyd.conf IP –disable-webserver`
+
+where IP is the same IP address of Honeydconfiguration file and INTERFACE is the interface of the host machine occupied by the honeypot
+
+7. Run:
+
+`sudo farpd -d -i INTERFACE <IP>`
+
+in order to make the host machine intercept the network traffic addressed to the honeypot
+
+8. honeySiemens is up and running!
