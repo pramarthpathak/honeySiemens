@@ -26,7 +26,7 @@ has to be on the same network as the host interface where honeyd will listen.
 
 where IP is the same IP address of Honeydconfiguration file and INTERFACE is the interface of the host machine occupied by the honeypot
 
-7. Run:
+7. From inside the repository, run:
 
 `sudo farpd -d -i INTERFACE <IP>`
 
