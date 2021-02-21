@@ -9,9 +9,6 @@ low interaction honeypot that simulate a siemens PLC
 
 # How to install?
 1. Install [Honeyd](https://github.com/DataSoft/Honeyd) and all its dependencies.
-
-`/usr/share/honeyd/nmap-os-db`
-
 2. Install farpd
 
 `sudo apt-get install farpd`
