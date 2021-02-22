@@ -31,4 +31,4 @@ in order to make the host machine intercept the network traffic addressed to the
 
 8. honeySiemens is up and running!
 
-For more information take a look to the [report](./report/honeySiemens.pdf)
+For more information take a look at the [report](./report/honeySiemens.pdf)
