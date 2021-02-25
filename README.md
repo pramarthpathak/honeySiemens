@@ -1,5 +1,5 @@
 # honeySiemens
-low interaction honeypot that simulate a siemens PLC 
+low interaction honeypot that simulates a Siemens Simatic S7-300 PLC 
 
 # Requirements 
 - An operating system (tested on ubuntu 18.04)
